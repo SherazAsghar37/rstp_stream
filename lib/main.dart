@@ -48,6 +48,24 @@ class MyScreenState extends State<MyScreen> {
     // connect();
   }
 
+  //   Onvif? onvif;
+
+  // int _counter = 0;
+
+  // Future<void> _incrementCounter() async {
+  //   try {
+  //     onvif = await Onvif.connect(
+  //         host: '192.168.1.144:2020', username: 'office', password: 'office');
+  //     var deviceInfo = await onvif!.deviceManagement.getDeviceInformation();
+
+  //     log(deviceInfo.model);
+  //   } catch (e) {
+  //     log(e.toString());
+  //   }
+  //   setState(() {
+  //     _counter++;
+  //   });
+  // }
   void connect(String ip, String id, String pass, String streamOpt) {
     try {
       player.open(
